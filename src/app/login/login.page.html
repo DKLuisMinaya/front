@@ -1,0 +1,25 @@
+
+<ion-content>
+  <div class="background-image"></div>
+  <div class="container">
+    <h1 class="welcome-label">Inicio de Sesion</h1>
+    <form>
+      <ion-item lines="none" class="input-item1">
+        <ion-label position="stacked" class="input-label">Cédula</ion-label>
+        <ion-input #dni type="text" placeholder="Ingrese su cédula"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none" class="input-item2">
+        <ion-label position="stacked" class="input-label">Password</ion-label>
+        <ion-input  #password type="password" placeholder="Ingrese su contraseña"></ion-input>
+        
+      </ion-item>
+
+      <ion-button class="ion-button1" (click)="login(dni, password)" expand="block" class="ion-button1">Ingresar</ion-button>
+
+      <p class="register-link">
+        ¿No estás registrado? <a [routerLink]="['/signup']">Regístrate</a>
+      </p>
+    </form>
+  </div>
+</ion-content>

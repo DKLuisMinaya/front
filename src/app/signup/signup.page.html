@@ -1,0 +1,16 @@
+<ion-content >
+  <div class="background-image"></div>
+  
+  <div class="container">
+    <h1 class="welcome-label">Registro</h1>
+        <ion-input #user label="Nombre" placeholder="Ingresa tus nombres"></ion-input>
+        <ion-input placeholder="Ingresa tu correo" #email type="email" label="Email"></ion-input>
+        <ion-input #dni label="DNI"  placeholder="Ingresa tu cedula"></ion-input>
+        <ion-input #password type="password" label="Password" placeholder="Ingresa tu contraseña">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+        
+    <ion-button class="ion-button1" (click)="registro(user, email, dni, password)" >Registrarme</ion-button>
+  </div>
+
+</ion-content>
